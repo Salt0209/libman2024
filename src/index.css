@@ -1,0 +1,49 @@
+html {
+    overflow-x: auto; /* Cho phép thanh cuộn ngang */
+    overflow-y: auto;
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+}
+
+card-content {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.card img {
+    width: 80px;
+    max-height: 80px;
+}
+
+.card-content {
+    padding: 2px 5px;
+    display: inherit;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 1.5em;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: blue;
+    }
+}
